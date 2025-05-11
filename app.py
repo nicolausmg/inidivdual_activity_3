@@ -117,6 +117,12 @@ with tab1:
         ).interactive()
 
         st.altair_chart(combined_chart, use_container_width=True)
+        st.markdown("""
+<span style='color: steelblue;'>●</span> Monthly Sales
+                    
+
+<span style='color: orange;'>---</span> 3-Month Moving Average
+""", unsafe_allow_html=True)
     with c2:
         # Monthly revenue chart
         st.markdown("### Total Sales by Year")
